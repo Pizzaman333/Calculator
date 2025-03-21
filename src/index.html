@@ -1,18 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css" integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./styles.css">
-    <link rel="stylesheet" href="./reset.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./reset.css" />
+  </head>
+  <body>
     <section class="calculator">
-        <h1 class="calculator__text">Calculator!</h1>
+      <h1 class="calculator__title">Calculator!</h1>
+      <ul class="calculator__output__list">
+        <li class="calculator__output__item">
+          <textarea name="" id="" class="calculator__output"></textarea>
+        </li>
+        <li class="calculator__output__item">
+          <textarea name="" id="" class="calculator__output"></textarea>
+        </li>
+        <li class="calculator__output__item">
+          <textarea name="" id="" class="calculator__output"></textarea>
+        </li>
+      </ul>
+      <textarea name="" id="" class="calculator__result"></textarea>
+      <ul class="calculator__list">
+        <li class="calculator__item">
+          <button type="button" class="calculator__button"></button>
+        </li>
+        <li class="calculator__item">
+          <button type="button" class="calculator__button"></button>
+        </li>
+        <li class="calculator__item clear">
+          <button type="button" class="calculator__button">C</button>
+        </li>
+        <li class="calculator__item operator">
+          <button type="button" class="calculator__button">÷</button>
+        </li>
+        <li class="calculator__item number">
+          <button type="button" class="calculator__button">7</button>
+        </li>
+        <li class="calculator__item number">
+          <button type="button" class="calculator__button">8</button>
+        </li>
+        <li class="calculator__item number">
+          <button type="button" class="calculator__button">9</button>
+        </li>
+        <li class="calculator__item operator">
+          <button type="button" class="calculator__button">×</button>
+        </li>
+        <li class="calculator__item number">
+          <button type="button" class="calculator__button">4</button>
+        </li>
+        <li class="calculator__item number">
+          <button type="button" class="calculator__button">5</button>
+        </li>
+        <li class="calculator__item number">
+          <button type="button" class="calculator__button">6</button>
+        </li>
+        <li class="calculator__item operator">
+          <button type="button" class="calculator__button">-</button>
+        </li>
+        <li class="calculator__item number">
+          <button type="button" class="calculator__button">1</button>
+        </li>
+        <li class="calculator__item number">
+          <button type="button" class="calculator__button">2</button>
+        </li>
+        <li class="calculator__item number">
+          <button type="button" class="calculator__button">3</button>
+        </li>
+        <li class="calculator__item operator">
+          <button type="button" class="calculator__button">+</button>
+        </li>
+        <li class="calculator__item">
+          <button type="button" class="calculator__button">+/-</button>
+        </li>
+        <li class="calculator__item number">
+          <button type="button" class="calculator__button">0</button>
+        </li>
+        <li class="calculator__item">
+          <button type="button" class="calculator__button">,</button>
+        </li>
+        <li class="calculator__item equals">
+          <button type="button" class="calculator__button equals">=</button>
+        </li>
+      </ul>
     </section>
 
     <script type="module" src="./main.js"></script>
-</body>
+  </body>
 </html>

@@ -1,8 +1,133 @@
 .calculator {
-    padding-top: 40px;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f0f0f0; 
 }
 
-.calculator__text {
+.calculator__title {
     text-align: center;
     font-size: 48px;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    color: #333333;
+}
+
+.calculator__result {
+    width: 100%;
+    max-width: 600px;
+    height: 80px;
+    font-size: 48px;
+    text-align: right;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: #005B5B; 
+    color: white;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.2);
+    padding-right: 20px;
+    padding-left: 20px;
+    resize: none;
+}
+
+.calculator__result:hover {
+    background-color: #004545; 
+}
+
+.calculator__output__list {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; 
+    margin-bottom: 10px;
+}
+
+.calculator__output__item {
+    list-style: none;
+}
+
+.calculator__output {
+    width: 195px; 
+    height: 60px;
+    font-size: 36px;
+    text-align: center;
+    padding: 5px;
+    border: none;
+    border-radius: 8px;
+    background-color: #003B3B;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+    resize: none;
+    overflow: hidden;
+}
+
+.calculator__output:focus {
+    outline: none;
+    background-color: #002B2B; 
+}
+
+.calculator__list {
+    margin-top: 15px;
+    max-width: 605px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px; 
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.calculator__item {
+        width: 140px;
+        height: 100px;
+    background-color: #cccccc;
+    border-radius: 10px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer; 
+    transition: all 0.2s ease;
+    color: #333333;
+}
+
+.calculator__item:hover {
+    background-color: #bbbbbb;
+    transform: scale(1.05);
+}
+
+.calculator__button {
+    width: 100%;
+    height: 100%;
+    font-size: 48px;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    background-color: transparent;
+    cursor: pointer; 
+    color: inherit;
+}
+
+.calculator__item.operator {
+    color: #ffffff;
+    background-color: #ff7f50; 
+}
+
+.calculator__item.operator:hover {
+    background-color: #E05E30;
+}
+
+.calculator__item.equals {
+    background-color: #008B8B; 
+    color: white;
+}
+
+.calculator__item.equals:hover {
+    background-color: #006B6B;  
 }
