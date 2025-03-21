@@ -1,4 +1,8 @@
-.text {
+.calculator {
+    padding-top: 40px;
+}
+
+.calculator__text {
+    text-align: center;
     font-size: 48px;
-    color: red;
 }
